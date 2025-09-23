@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducao ao DOM</title>
+
+    <style>
+        body {
+            background-color: azure;
+            color: black;
+        }
+
+        h1 {
+            color: red;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Estudando os resultados com DOM</p>
+    <p>Apredendo novos recursos e ferramentas em <strong>JavaScript</strong></p>
+    <div id="mesage">Clique para saber mais</div>
+
+    <script>
+        var corpo = window.document.body
+        corpo.style.backgroundColor = 'gray'
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'green'
+
+        var d = window.document.getElementById('mesage')
+        d.style.background = "black"
+        d.style.color = "white"
+
+        var p2 = window.document.getElementsByTagName('p')[1]
+        p2.style.color = 'blue'
+        p2.style.textAlign = 'center'
+
+        window.document.writeln(p1.innerText)
+        window.document.writeln(p2.innerText)
+    </script>
+</body>
+
+</html>
