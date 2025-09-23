@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ex004</title>
-    <style>
-        body {
-            font-size: 4rem;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
+    <title>ex004_1</title>
 </head>
 
 <body>
     <script>
-        var nome = window.prompt("Insira seu nome a seguir :")
-        document.write(`O nome informado tem o tamanho ${nome.length}`)
-        document.write(`O nome informado em maiusculo é ${nome.toUpperCase()}`)
-        document.write(`O nome informado em minusculo é ${nome.toUpperCase()}`)
+        var nome = window.prompt("Insira seu nome a seguir")
+        document.writeln(`O nome do usuario digitado tem ${nome.length} caracteres`)
+        document.writeln(`O nome do usuario digitado em maiusculas é ${nome.toLocaleUpperCase()}`)
+        document.writeln(`O nome do usuario digitado tem minusculas é ${nome.toLocaleLowerCase()} `)
     </script>
 </body>
 

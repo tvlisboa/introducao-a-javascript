@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title>
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+            color: black;
+            font: normal 22pt Arial;
+            font-weight: bolder;
+            font-style: italic;
+        }
+
+        h1 {
+            color: green;
+            font-size: 46pt;
+        }
+
+        p {
+            color: blue;
+        }
+
+        /*
+        Comentario em css
+        */
+    </style>
+</head>
+
+<body>
+    <!--Comentario em html-->
+    <h1>Tratamento de Dados</h1>
+    <p>Primeiras aulas de introducao a JavaScript</p>
+    <Script>
+        var nome1 = window.prompt("Digite o nome do aluno")
+        var materia1 = window.prompt("Digite a materia do aluno")
+
+        var numero1 = Number.parseFloat(window.prompt("Insira a primeira nota a seguir:"))
+        var numero2 = Number.parseFloat(window.prompt("Insira a segunda nota a seguir:"))
+        var numero3 = Number.parseFloat(window.prompt("Insira a terceira nota a seguir:"))
+        var numero4 = Number.parseFloat(window.prompt("Insira a quarta nota a seguir:"))
+
+        var soma = numero1 + numero2 + numero3 + numero4
+        var media = (numero1 + numero2 + numero3 + numero4) / 4
+
+        window.alert(`O aluno ${nome1}, ficou com a média ${media}, em ${materia1}`)
+        window.alert(`A soma entre os numeros ${numero1}, ${numero2}, ${numero3}, ${numero4} foi ${soma}`)
+
+    </Script>
+</body>
+
+</html>
