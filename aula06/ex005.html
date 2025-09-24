@@ -24,25 +24,53 @@
     <h1>Iniciando os estudos com DOM</h1>
     <p>Estudando os resultados com DOM</p>
     <p>Apredendo novos recursos e ferramentas em <strong>JavaScript</strong></p>
+    <p>Novas instrucoes para usar as TagName</p>
     <div id="mesage">Clique para saber mais</div>
+    <div id="mesage2">Another message for you</div>
+    <div id="mesage3">Testando as configurações do DOM</div>
+    <div id="mesage4">Testando os queryselector</div>
 
     <script>
         var corpo = window.document.body
-        corpo.style.backgroundColor = 'gray'
+        corpo.style.backgroundColor = 'yellow'
+
+        var h1 = window.document.getElementsByTagName('h1')[0]
+        h1.style.textAlign = 'center'
+        h1.style.fontSize = '2rem'
 
         var p1 = window.document.getElementsByTagName('p')[0]
         p1.style.color = 'green'
-
-        var d = window.document.getElementById('mesage')
-        d.style.background = "black"
-        d.style.color = "white"
+        p1.style.textAlign = 'left'
 
         var p2 = window.document.getElementsByTagName('p')[1]
-        p2.style.color = 'blue'
-        p2.style.textAlign = 'center'
+        p2.style.color = 'orange'
+        p2.style.textAlign = 'left'
 
-        window.document.writeln(p1.innerText)
-        window.document.writeln(p2.innerText)
+        var p3 = window.document.getElementsByTagName('p')[2]
+        p2.style.color = 'blue'
+        p2.style.textAlign = 'left'
+
+        var d1 = window.document.getElementById('mesage')
+        d1.style.background = "black"
+        d1.style.color = "white"
+
+        var d2 = window.document.getElementById('mesage2')
+        d2.style.background = 'gray'
+        d2.style.color = 'orange'
+        d2.innerText = 'novas mudancas usando o dom'
+
+        var d3 = window.document.getElementById('message3')
+
+        var d4 = window.document.querySelector('div#mesage4')
+        d4.style.color = 'blue'
+        d4.style.background = 'green'
+
+
+        window.document.writeln("Introducao ao DOM")
+        window.document.writeln("Resultado do primeiro paragrafo" + p1.innerText)
+        window.document.writeln("Resultado do segundo paragrafo" + p2.innerText)
+        window.document.writeln("Resultado do terceiro paragrafo" + p3.innerText)
+        window.document.writeln(window.document.URL)
     </script>
 </body>
 

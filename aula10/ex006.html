@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducao a eventos DOM</title>
+
+    <style>
+        div#area {
+            background-color: greenyellow;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        Interaja aqui...
+    </div>
+
+    <script>
+        //escopo da variavel esta global
+        var ar = window.document.getElementById('area')
+        ar.addEventListener('click', clicar)
+        ar.addEventListener('mouseenter', entrar)
+        ar.addEventListener('mouseout', sair)
+
+        //mouse clica e altera o texto da caixa
+        function clicar() {
+            ar.innerText = 'Clicou aqui'
+            ar.style.background = 'red'
+        }
+
+        //mouse entra e altera o texto da caixa
+        function entrar() {
+            ar.innerText = 'In'
+            ar.style.background = 'blue'
+        }
+
+        //mouse sai e altera o texto da caixa
+        function sair() {
+            ar.innerText = 'Out'
+            ar.style.background = 'greenyellow'
+        }
+    </script>
+</body>
+
+</html>
