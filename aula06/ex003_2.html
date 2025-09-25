@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title>
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+            color: black;
+            font: normal 22pt Arial;
+            font-weight: bolder;
+            font-style: italic;
+        }
+
+        h1 {
+            color: green;
+            font-size: 46pt;
+        }
+
+        p {
+            color: blue;
+        }
+
+        /*
+        Comentario em css
+        */
+    </style>
+</head>
+
+<body>
+    <!--Comentario em html-->
+    <h1>Introducao aao JavaScript</h1>
+    <p>Aulas e conteúdos introdutórios a utilização do <strong> JavaScript</strong></p>
+    <Script>
+        //parsefloat - faz a conversao de uma string para numero.
+        //tudo que e prompt, é recebido pelo sistema como uma string
+        var numero1 = Number.parseFloat(window.prompt("Digite um numero a seguir:"))
+        var numero2 = Number.parseFloat(window.prompt("Digite um outro numero a seguir"))
+
+        //recebe os dados informados pelo usuario 
+        var soma = numero1 + numero2
+        window.alert(`A Soma entre os numero ${numero1} e ${numero2} é igual a ${soma}`)
+    </Script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex004_2</title>
+</head>
+
+<body>
+    <script>
+        var nome = window.prompt("Insira seu nome a seguir:")
+        var idade = window.prompt("Insira sua idade a seguir:")
+        var sexo = window.prompt("Insira seu sexo a seguir:")
+        var estadoCivil = window.prompt("Insira seu estado civil a seguir:")
+        var cidade = window.prompt("Insira sua cidade a seguir:")
+
+        //nome
+        document.write(`Olá, ${nome}. Seu nome tem ${nome.length} letras. <br/>`)
+        document.write(`O Nome do usuario informado em maiusculas é ${nome.toLocaleUpperCase()}<br/>`)
+        document.write(`O Nome do usuario informado em minusculas é ${nome.toLocaleLowerCase()}<br/>`)
+
+        //sexo
+        document.write(`O sexo ${sexo} informado tem ${sexo.length} letras.<br/>`)
+        document.write(`O Sexo do usuario informado em maiusculas é ${sexo.toLocaleUpperCase()}<br/>`)
+        document.write(`O Sexo do usuario informado em minusculas é ${sexo.toLocaleLowerCase()}<br/>`)
+
+        //estadocivil
+        document.write(`O estado civil ${estadoCivil} informado tem ${estadoCivil.length} letras.<br/>`)
+        document.write(`O estado civil do usuario informado em maiusculas é ${estadoCivil.toLocaleUpperCase()}<br/>`)
+        document.write(`O estado civil do usuario informado em minusculas é ${estadoCivil.toLocaleLowerCase()}<br/>`)
+
+        //sexo
+        document.write(`A cidade ${cidade} informada tem ${cidade.length} letras.<br/>`)
+        document.write(`O Cidade do usuario informado em maiusculas é ${cidade.toLocaleUpperCase()}<br/>`)
+        document.write(`O Cidade do usuario informado em minusculas é ${cidade.toLocaleLowerCase()}<br/>`)
+    </script>
+</body>
+
+</html>
