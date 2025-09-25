@@ -5,20 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducao a soma de numeros</title>
+
+    <style>
+        body {
+            font: normal 18pt Arial
+        }
+
+        input {
+            font: normal 16pt Arial;
+            width: 100px;
+            border-radius: 20px;
+        }
+
+        div#res {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Somando valores </h1>
+    <h1>Somando de valores </h1>
+
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
 
     <script>
-        function somar() {
-            var tn1
-        }
 
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number.parseFloat(tn1.value)
+            var n2 = Number.parseFloat(tn2.value)
+            var soma = n1 + n2
+            res.innerHTML = `A soma dos numeros ${n1} e ${n2} é igual a <strong>${soma}  </strong>`
+        }
     </script>
+
 </body>
 
 </html>
