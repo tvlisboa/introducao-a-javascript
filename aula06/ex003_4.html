@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducao a JavaScript</title>
+
+    <style>
+        body {
+            background-color: #340af1;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(83, 65, 65);
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exercicios com numeros</h1>
+    <p>Conversão de string para numeros, podendo assim utilizar as funcoes de soma e subtracao.</p>
+
+    <script>
+        window.alert("Insira seus dados a seguir: ")
+        var num1 = Number.parseFloat(window.prompt("Informe um numero a seguir. "));
+        var num2 = Number.parseFloat(window.prompt("Informe outro numero a seguir."));
+        var num3 = Number.parseFloat(window.prompt("Informe mais um numero a seguir. "));
+        var num4 = Number.parseFloat(window.prompt("Informe o ultimo numero a seguir."));
+
+        var soma = num1 + num2 + num3 + num4
+        var subtracao = num1 - num2 - num3 - num4
+        var divisao = (num1 + num2 + num3 + num4) / 4
+        var multiplicar = (num1 + num2 + num3 + num4) * 4
+
+
+        window.alert("Os numeros informados foram: ")
+        window.alert(num1)
+        window.alert(num2)
+        window.alert(num3)
+        window.alert(num4)
+
+        window.alert("A soma dos valores informados foi: " + soma)
+        window.alert("A subtracao dos valores informados foi: " + subtracao)
+        window.alert("A divisao dos valores informados foi: " + divisao)
+        window.alert("A multiplicacao dos valores informados foi: " + multiplicar)
+        window.alert("Obrigado por usar o sistema de contas")
+
+    </script>
+</body>
+
+</html>
