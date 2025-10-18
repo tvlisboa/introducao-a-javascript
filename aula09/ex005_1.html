@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducao ao DOM</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            color: blue;
+            font: normal 20pt Arial;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+
+    <div>
+        <p>Primeiro paragrafo</p>
+        <p>Segundo paragrafo</p>
+        <p>Terceiro paragrafo para <strong>DOM e javascript</strong></p>
+    </div>
+
+    <div id="msg1">Clique aqui para ver mais</div>
+
+
+    <script>
+
+        var corpo = window.document.body
+        corpo.style.background = "black"
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]
+        var p3 = window.document.getElementsByTagName('p')[2]
+        p1.style.color = 'orange'
+        p2.style.color = 'green'
+        p3.style.color = 'red'
+
+        window.document.writeln("Concatenando os textos em javascript: ")
+        window.document.writeln(p1.innerText)
+        window.document.writeln(p2.innerText)
+        window.document.writeln(p3.innerHTML)
+
+        var msg1 = window.document.getElementById('msg1')
+        msg1.style.background = 'yellow'
+        msg1.innerText = 'teste mensagem'
+
+        window.document.writeln(msg1.innerText)
+
+    </script>
+</body>
+
+</html>
