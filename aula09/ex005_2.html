@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando o DOM</title>
+    <style>
+        body {
+            background-color: rgb(24, 80, 202);
+            color: white;
+            font: normal 1.5rem arial;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Primeiros passos com o DOM</h1>
+    <p>Teste 1</p>
+    <p>Teste <strong>2</strong></p>
+    <div id="msg1">Mensagem 1</div>
+    <div name="mgs2"> Mensagem 2</div>
+
+    <script>
+        window.document.writeln("Teste DOM")
+
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var msg = window.document.getElementById('msg1')
+        var msg2 = window.document.getElementsByName('msg2')
+
+        msg.style.color = 'yellow'
+        msg.style.fontWeight = "bold"
+        msg.innerText = "alteração do texto"
+
+        document.writeln(p1.innerHTML)
+
+        var d1 = window.document.querySelector('div#msg1')
+        d1.style.color = "red"
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini calculadora</title>
+
+    <style>
+        body {
+            font: normal 1.5rem arial;
+        }
+
+        input {
+            font: normal 12px arial;
+            width: 100px;
+        }
+
+        div#res {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Soma</h1>
+
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2"> +
+    <input type="number" name="txtn3" id="txtn3"> +
+    <input type="number" name="txtn4" id="txtn4"> =
+
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res"> Resultado</div>
+
+    <script>
+        function somar() {
+            var num1 = window.document.getElementById('txtn1')
+            var num2 = window.document.getElementById('txtn2')
+            var num3 = window.document.getElementById('txtn3')
+            var num4 = window.document.getElementById('txtn4')
+
+            var res = window.document.getElementById('res')
+
+            var nm1 = Number.parseFloat(num1.value)
+            var nm2 = Number.parseFloat(num2.value)
+            var nm3 = Number.parseFloat(num3.value)
+            var nm4 = Number.parseFloat(num4.value)
+            var soma = (nm1 + nm2 + nm3 + nm4)
+
+            res.innerHTML = `A soma dos numeros informados ${nm1}, ${nm2}, ${nm3} e ${nm4} é igual a ${soma}`
+        }
+
+    </script>
+</body>
+
+
+</html>
