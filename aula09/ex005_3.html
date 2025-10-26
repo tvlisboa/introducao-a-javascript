@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIOS - COM DOM</title>
+
+    <style>
+        body {
+            background-color: rgb(12, 117, 117);
+            color: white;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Primeiro paragrafo - Aqui entra o resultado</p>
+    <p>Aprendendo o uso do <strong> DOM </strong> com o JAVASCRIPT</p>
+
+    <div id="msg1">Clique aqui</div>
+    <div>Clique aqui 2.0</div>
+
+
+    <script>
+        var corpo = document.body
+        corpo.style.background = 'black'
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'red'
+
+        var p2 = window.document.getElementsByTagName('p')[1]
+        p2.style.color = 'yellow'
+
+        window.document.writeln("Conteudo do primeiro paragrado " + p1.innerText)
+        window.document.writeln("Conteudo do segundo paragrafo" + p2.innerText)
+
+
+        document.writeln(p1.innerText)
+        document.writeln(p1.innerHTML)
+
+
+        var msg1 = window.document.getElementById('msg1')
+        msg1.style.background = 'green'
+        msg1.innerText = "Alteracao do texto"
+
+        var msg2 = window.document.getElementsByTagName('msg2')[0]
+        msg2.innerText = "Teste 2"
+
+    </script>
+</body>
+
+</html>
