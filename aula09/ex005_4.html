@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do DOM</title>
+
+    <style>
+        body {
+            background-color: blueviolet;
+            color: white;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Primeiros passos com <strong>DOM</strong></h1>
+    <p>Resultado do uso com <strong>DOM</strong></p>
+    <p>Iniciando estudos do <strong>DOM</strong> com JavaScript</p>
+    <p>Terceiro paragrafo de teste</p>
+    <div id="msg1"><strong>Clique aqui</strong></div>
+
+    <script>
+        var body = window.document.body
+        body.style.background = 'red'
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'black'
+        window.document.writeln(p1.innerHTML)
+
+
+        var d = window.document.getElementById('msg1')
+        msg1.style.background = 'green'
+        d.innerText = 'Mudanca do texto da DIV'
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com DOM</title>
+
+    <style>
+        div#area {
+            font: normal 18pt arial;
+            background-color: green;
+            color: white;
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="area">Clique aqui</div>
+
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('mouseenter', entrou)
+        area.addEventListener('click', clicou)
+        area.addEventListener('mouseout', saiu)
+
+
+        function entrou() {
+            area.innerText = "Mouse Entrou"
+            area.style.background = "orange"
+        }
+
+        function clicou() {
+            area.innerText = "Mouse Clicou"
+            area.style.backgroundColor = "red"
+        }
+
+        function saiu() {
+            area.innerText = "Mouse Saiu"
+            area.style.backgroundColor = "blue";
+        }
+
+
+    </script>
+</body>
+
+</html>

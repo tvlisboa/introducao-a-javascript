@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITV - ONLINES</title>
+</head>
+
+<body>
+    <h1>Sistema Digital de Vistos</h1>
+    <p><strong>Nacionalidade do usuario</strong></p>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="CONFIRMAR" onclick="verificar()">
+    <div id="result"></div>
+
+
+    <script>
+        function verificar() {
+            var txtpais = window.document.getElementById('txtpais')
+            var resposta = window.document.getElementById('result')
+            result.innerHTML = `<p>O pais do usuario informado é: <strong>${txtpais}</strong></p>`
+
+            if (result == 'Brasil') {
+                result.innerHTML += `<p><strong>PAÍS</strong> de origem do usuário informado é <strong>${txtpais}</strong></p>`
+            } else {
+                result.innerHTML += `País informado é invalido.`
+            }
+        }
+
+    </script>
+</body>
+
+</html>

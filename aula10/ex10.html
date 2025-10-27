@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN - RJ</title>
+</head>
+
+<body>
+    <h1>Sistema de Multas</h1>
+    <p><strong>Velocidade do veiculo</strong> em <input type="number" name="txtvel" id="txtvel"> KM/H</p>
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="result"></div>
+
+
+    <script>
+
+        function calcular() {
+            var txtvel = window.document.getElementById('txtvel')
+            var res = window.document.getElementById('result')
+            var vel = Number.parseFloat(txtvel.value)
+            res.innerHTML = `<p>Velocidade atual do usuário é: <strong>${vel} em KM/H</strong></p>`
+            if (vel >= 110) {
+                res.innerHTML += `<p>MULTADO, usuário acima do limite da via<strong>${vel}</strong>`
+            }
+            res.innerHTML += `<p>Dirija com cuidado e respeite as normas da via`
+        }
+    </script>
+</body>
+
+</html>
