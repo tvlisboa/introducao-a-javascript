@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERIFICADOR DE IDADES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>VERIFICADOR DE IDADES</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                ANO NASCIMENTO <input type="number" name="txtano" id="txtano" min="0" max="100">
+            </p>
+
+            <p>
+                SEXO:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="masc">MASC</label>
+
+                <input type="radio" name="radsex" id="fem" checked>
+                <label for="fem">FEM</label>
+            </p>
+            <p>
+                <input type="button" value="CONFERIR" onclick="conferir()">
+            </p>
+        </div>
+
+        <div id="result">
+            INFORME OS DADOS ACIMA
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; DUARTE - FULL STACK DEVELOPER</p>
+        <p>TODOS OS DIREITOS RESERVADOS</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
