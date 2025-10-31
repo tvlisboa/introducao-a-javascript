@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAIS - CONFERENTE</title>
+</head>
+
+<body>
+    <h1> SIP - Sistema de informacao de paises</h1>
+    <strong> PAÍS DE ORIGEM DO USUARIO</strong> <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="conferir()">
+    <div id="result">
+
+    </div>
+
+
+    <script>
+        function conferir() {
+            var txtpais = document.getElementById('txtpais')
+            var resultado = document.getElementById('result')
+            var pais = String(txtpais.value)
+
+            if (pais == "Brasil") {
+                resultado.innerHTML += `<p>O PAIS INFORMADO DO USUARIO ${pais}</p>`
+                resultado.innerHTML += `<p><strong>BRASILEIRO</p></strong>`
+            } else {
+                resultado.innerHTML += `<p><strong>GRINGO</p></strong>`
+            }
+        }
+    </script>
+
+    </script>
+
+</body>
+
+</html>
