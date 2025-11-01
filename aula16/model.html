@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Modelos</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Ano de fabricação do veiculo:
+                <input type="number" name="txtfbr" id="txtfbr" min="0">
+            </p>
+            <p>Modelo do veiculo
+                <input type="radio" name="radmodel" id="hat" checked>
+                <label for="hatch">HATCH</label>
+
+                <input type="radio" name="radmodel" id="sed">
+                <label for="seda">SEDÃ</label>
+
+                <input type="radio" name="radmodel" id="suv">
+                <label for="suv">SUV</label>
+            </p>
+
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+
+        <div id="result">
+            Preencha os dados acima corretamente.
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; DUARTE - FULL STACK DEVELOPER</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
