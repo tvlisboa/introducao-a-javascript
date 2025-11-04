@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVU - SISTEMA DE VISTOS</title>
+</head>
+
+<body>
+    <h1>SVU - Bem vindo ao SISTEMA DE VISTOS UNIFICADO</h1>
+    <p>Informe a <strong>nacionalidade</strong> do USUÁRIO a seguir:</p>
+    <input type="text" name="txtnacionalidade" id="txtnacionalidade" placeholder="Ex: Brasileiro">
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <div id="result"></div>
+
+    <script>
+        function verificar() {
+            var txtnacionalidade = window.document.getElementById('txtnacionalidade');
+            var result = window.document.getElementById('result');
+            var nacionalidade = String(txtnacionalidade.value).toUpperCase().trim();
+
+            // Verifica se o campo está vazio
+            if (nacionalidade === '') {
+                result.innerHTML = '<p>Por favor, informe a nacionalidade!</p>';
+            }
+
+            if (nacionalidade !== "BRASILEIRO" && nacionalidade !== "BRASILEIRA") {
+                result.innerHTML += `<p>Nacionalidade informada: ${txtnacionalidade.value}</p>`;
+                result.innerHTML += `<p><strong>NÃO É BRASILEIRO</strong></p>`;
+            } else {
+                result.innerHTML += `<p><strong>É BRASILEIRO</strong></p>`;
+            }
+        }
+
+        document.getElementById('txtnacionalidade').addEventListener('keypress', function (event) {
+            if (event.key === 'Enter') {
+                verificar();
+            }
+        });
+    </script>
+</body>
+
+</html>

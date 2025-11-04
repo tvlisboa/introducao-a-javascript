@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN - RJ</title>
+</head>
+
+<h1>SISTEMA INFORMATIZADO DE MULTAS</h1>
+<p>Velocidade do veiculo: </p> <input type="number" name="txtvel" id="txtvel">
+<input type="button" value="Verificar" onclick="calcular()">
+<div id="result">
+
+
+</div>
+
+<script>
+    function calcular() {
+        var txtvel = window.document.getElementById('txtvel')
+        var velocidade = Number(txtvel.value)
+        var result = window.document.getElementById('result')
+        result.innerHTML = `<p>A velocidade atual do veiculo é <strong>${velocidade}</strong></p>`
+        if (velocidade >= 75) {
+            result.innerHTML += `<p><strong>VEICULO ACIMA DA</strong> VELOCIDADE DA VIA ${velocidade}</p>`
+            result.innerHTML += `<p><strong>VEICULO AUTUADO</strong></p>`
+        }
+
+        result.innerHTML += `<p> Dirija com seguranca, <strong>USE O CINTO!</p></strong>`
+    }
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

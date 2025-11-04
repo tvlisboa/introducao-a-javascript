@@ -1,4 +1,4 @@
-var velocidade = 110;
+var velocidade = 65;
 console.log(`A velocidade informada é ${velocidade} em kilometros por hora`)
 
 if (velocidade > 75) {

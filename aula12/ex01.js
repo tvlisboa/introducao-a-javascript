@@ -1,4 +1,4 @@
-var idade = 21;
+var idade = 16;
 
 console.log(`A idade do usuario informado é ${idade}`)
 
