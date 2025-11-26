@@ -1,6 +1,6 @@
 body{
-    background-color: rgb(30, 159, 245);
-    font: normal1.5rem Arial;
+        background: linear-gradient(120deg, #4c79d3 44.9%, #F0F8FE 45%) no-repeat fixed ;
+            font: normal1.5rem Arial;
 }
 
 header{
@@ -18,7 +18,7 @@ section{
 }
 
 footer{
-    color: white;
+    color: black;
     text-align: center;
     font-weight: bold;
 }

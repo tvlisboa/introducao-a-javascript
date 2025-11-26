@@ -1,18 +1,30 @@
-function carregar() {
-    var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('img')
-    var data = new Date()
-    var hora = data.getHours()
-    msg.innerHTML = `As horas atuais são: ${hora} horas`
+function tabuada() {
+    let number = document.getElementById("txtnumber");
+    let tab = document.getElementById("seltab")
 
-    if (hora >= 0 && hora < 12) {
-        img.src = "imgs/manha.jpg"
-        document.body.style.background = "#e3ddcf"
-    } else if (hora >= 12 && hora < 18) {
-        img.src = "imgs/tarde.jpg"
-        document.body.style.background = "#cd9b5e"
+    /**
+     * Verificacao caso usuario deixe o campo de numero vazio
+     * informa ao usuario para digitar um numero valido
+     */
+
+    if (number.value.length == 0) {
+        window.alert("Insira um numero valido.")
     } else {
-        img.src = "imgs/noite.jpg"
-        document.body.style.background = "#604a70"
+        let num1 = Number(number.value)
+        let cont = 1;
+        tab.innerHTML = '';
+
+        /**
+         * Enquanto meu contador for menor que 10
+         * faca o seguinte bloco de codigo
+         */
+
+        while (cont <= 10) {
+            let item = document.createElement('option')
+            item.text = `${num1} x ${cont} = ${num1 * cont}`
+            item.value = `tab${cont}`
+            tab.appendChild(item)
+            cont++
+        }
     }
 }
