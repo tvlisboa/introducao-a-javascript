@@ -16,3 +16,12 @@ for (let position in carros) {
     console.log(`A position ${position} possui o seguinte carro associado ${carros[position]}`)
     console.log(carros[position])
 }
+
+/**
+ * Vai procurar dentro do vetor um valor informado
+ * dentro do parametro
+ */
+
+let veiculos = carros.indexOf("COROLLA")
+console.log(veiculos)
+console.log(`O veiculo informado está na posicao ${veiculos}`)
