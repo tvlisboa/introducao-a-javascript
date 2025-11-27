@@ -23,5 +23,10 @@ for (let position in carros) {
  */
 
 let veiculos = carros.indexOf("COROLLA")
-console.log(veiculos)
-console.log(`O veiculo informado está na posicao ${veiculos}`)
+
+if (position == null) {
+    console.log("O veiculo nao foi encontrado")
+} else {
+    console.log(veiculos)
+    console.log(`O veiculo informado está na posicao ${veiculos}`)
+}
